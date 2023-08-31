@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android", "web"],
+  "ios": {
+    "modules": ["ReactNativeSecureWindowModule"]
+  },
+  "android": {
+    "modules": ["com.bufgix.rnsecurewindow.ReactNativeSecureWindowModule"]
+  }
+}
