@@ -1,7 +1,3 @@
-export type ChangeEventPayload = {
-  value: string;
-};
+import { PropsWithChildren } from "react";
 
-export type ReactNativeSecureWindowViewProps = {
-  name: string;
-};
+export type SecureWindowProps = PropsWithChildren<{}>;

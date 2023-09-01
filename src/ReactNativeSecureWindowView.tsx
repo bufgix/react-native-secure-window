@@ -1,11 +1,29 @@
-import { requireNativeViewManager } from 'expo-modules-core';
-import * as React from 'react';
+import React, { useEffect } from "react";
+import { requireNativeViewManager } from "expo-modules-core";
+import { LogBox, Platform, View } from "react-native";
 
-import { ReactNativeSecureWindowViewProps } from './ReactNativeSecureWindow.types';
+import { SecureWindowProps } from "./ReactNativeSecureWindow.types";
+import * as ExpoScreenCapture from "expo-screen-capture";
 
-const NativeView: React.ComponentType<ReactNativeSecureWindowViewProps> =
-  requireNativeViewManager('ReactNativeSecureWindow');
+LogBox.ignoreLogs([
+  "`new NativeEventEmitter()` was called with a non-null argument without",
+]);
 
-export default function ReactNativeSecureWindowView(props: ReactNativeSecureWindowViewProps) {
-  return <NativeView {...props} />;
+const SecureWindowNativeView: React.ComponentType<SecureWindowProps> =
+  Platform.OS === "android"
+    ? View
+    : requireNativeViewManager("ReactNativeSecureWindow");
+
+export default function SecureWindow(props: SecureWindowProps) {
+  useEffect(() => {
+    if (Platform.OS === "android") {
+      ExpoScreenCapture.preventScreenCaptureAsync();
+    }
+    return () => {
+      if (Platform.OS === "android") {
+        ExpoScreenCapture.allowScreenCaptureAsync();
+      }
+    };
+  }, []);
+  return <SecureWindowNativeView {...props} />;
 }

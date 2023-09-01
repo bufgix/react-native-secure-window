@@ -19,6 +19,8 @@ PODS:
     - React-NativeModulesApple
     - React-RCTAppDelegate
     - ReactCommon/turbomodule/core
+  - EXScreenCapture (5.3.0):
+    - ExpoModulesCore
   - FBLazyVector (0.72.4)
   - FBReactNativeSpec (0.72.4):
     - RCT-Folly (= 2021.07.22.00)
@@ -445,6 +447,10 @@ PODS:
     - React-perflogger (= 0.72.4)
   - ReactNativeSecureWindow (0.1.0):
     - ExpoModulesCore
+    - ScreenshotPreventing
+  - ScreenshotPreventing (1.4.0):
+    - ScreenshotPreventing/Core (= 1.4.0)
+  - ScreenshotPreventing/Core (1.4.0)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
 
@@ -458,6 +464,7 @@ DEPENDENCIES:
   - Expo (from `../node_modules/expo`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
+  - EXScreenCapture (from `../node_modules/expo-screen-capture/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/React/FBReactNativeSpec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -503,6 +510,7 @@ SPEC REPOS:
   trunk:
     - fmt
     - libevent
+    - ScreenshotPreventing
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -524,6 +532,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-keep-awake/ios"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core"
+  EXScreenCapture:
+    :path: "../node_modules/expo-screen-capture/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   FBReactNativeSpec:
@@ -612,6 +622,7 @@ SPEC CHECKSUMS:
   Expo: 900dc423a0e2c7e822b2c683a89426e82695fb27
   ExpoKeepAwake: be4cbd52d9b177cde0fd66daa1913afa3161fc1d
   ExpoModulesCore: e5a168deba84f74c0e558befa31dbaea06c00af0
+  EXScreenCapture: 81002ba5fb40a367fba9047d223068abb558594d
   FBLazyVector: 5d4a3b7f411219a45a6d952f77d2c0a6c9989da5
   FBReactNativeSpec: 3fc2d478e1c4b08276f9dd9128f80ec6d5d85c1f
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
@@ -650,7 +661,8 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 4941cc1b3cf08b792fbf666342c9fc95f1969035
   React-utils: b79f2411931f9d3ea5781404dcbb2fa8a837e13a
   ReactCommon: 4b2bdcb50a3543e1c2b2849ad44533686610826d
-  ReactNativeSecureWindow: 98419ec0afe27abdc3183626a8fa3d00148497ba
+  ReactNativeSecureWindow: ae7fc83c88d86dc09f6a8c2e782cfbedc701f73b
+  ScreenshotPreventing: 7057fd23cb00599ba265c0b166768e1e0cb3a0b0
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 3efc43e0d48686ce2e8c60f99d4e6bd349aff981
 
