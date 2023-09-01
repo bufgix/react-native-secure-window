@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "react-native-secure-window": ["../src/index"],
-      "react-native-secure-window/*": ["../src/*"]
+      "@bufgix/react-native-secure-window": ["../src/index"],
+      "@bufgix/react-native-secure-window/*": ["../src/*"]
     }
   }
 }

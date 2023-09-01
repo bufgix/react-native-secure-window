@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button, StyleSheet, Text, View, Image } from "react-native";
 
-import { SecureWindow } from "react-native-secure-window";
+import { SecureWindow } from "@bufgix/react-native-secure-window";
 
 export default function App() {
   const [counter, setCounter] = useState(0);
