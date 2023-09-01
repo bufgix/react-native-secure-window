@@ -2,11 +2,9 @@
 
 Hide react native views with an overlay when capturing screen
 
-
-| iOS | Android |
-| --- | --- |
+| iOS                                                                                                                                                      | Android                                                                                                                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <video width="300" height="500" src="https://github.com/bufgix/react-native-secure-window/assets/22038798/127f6aa4-22ed-4684-b570-9168899683ed"></video> | <video width="300" height="500" src="https://github.com/bufgix/react-native-secure-window/assets/22038798/7547dbcd-491d-46c5-93fb-d45d83eebce1"></video> |
-
 
 # Installation in managed Expo projects
 
@@ -20,10 +18,9 @@ For bare React Native projects, you must ensure that you have [installed and con
 
 ```bash
 ## You must install expo-screen-capture first
-yarn add expo-screen-capture 
+yarn add expo-screen-capture
 yarn add @bufgix/react-native-secure-window
 ```
-
 
 ### Configure for iOS
 
@@ -37,7 +34,7 @@ No additional set up necessary.
 
 ```tsx
 import { Text, View } from "react-native";
-import { SecureWindow } from "react-native-secure-window";
+import { SecureWindow } from "@bufgix/react-native-secure-window";
 
 export default function App() {
   return (
