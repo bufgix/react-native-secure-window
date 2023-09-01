@@ -1,6 +1,6 @@
 {
   "name": "@bufgix/react-native-secure-window",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hide/Prevent react native views with an overlay when capturing screen",
   "main": "build/index.js",
   "types": "build/index.d.ts",
