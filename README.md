@@ -19,7 +19,7 @@ For bare React Native projects, you must ensure that you have [installed and con
 ### Add the package to your npm dependencies
 
 ```
-yarn add react-native-secure-window
+yarn add @bufgix/react-native-secure-window
 ```
 
 
