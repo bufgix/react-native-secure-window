@@ -1,7 +1,7 @@
 {
   "name": "react-native-secure-window",
   "version": "0.1.0",
-  "description": "Hide react native views with an overlay when capturing screen",
+  "description": "Hide/Prevent react native views with an overlay when capturing screen",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {

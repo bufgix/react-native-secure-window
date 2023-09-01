@@ -5,7 +5,7 @@ Hide react native views with an overlay when capturing screen
 
 | iOS | Android |
 | --- | --- |
-| ![demo_ios](./demos/ios.mp4) | ![demo_android](./demos/android.mp4) |
+| ![demo_ios](https://github.com/bufgix/react-native-secure-window/raw/main/demos/ios.mp4) | ![demo_android](https://github.com/bufgix/react-native-secure-window/raw/main/demos/android.mp4) |
 
 
 
