@@ -8,7 +8,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <SecureWindow>
+      <SecureWindow style={{ flex: 1 }}>
         <Image
           source={{
             uri: "https://reactnative.dev/img/tiny_logo.png",

@@ -1,3 +1,4 @@
 import { PropsWithChildren } from "react";
+import { ViewProps } from "react-native";
 
-export type SecureWindowProps = PropsWithChildren<{}>;
+export type SecureWindowProps = ViewProps & {};
